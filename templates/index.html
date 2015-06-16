@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>
+Telly Tubbies
+</title>
+</head>
+<body>
+<p>Telly Tubbies are:
+<ul>
+{% for tellytubby in tellytubbies %}
+<li>
+{%   print "{}".format(tellytubby.name) %}
+</li>
+{% endfor %}
+<ul>
+</p>
+</body>
+</html>
