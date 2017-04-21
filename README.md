@@ -61,7 +61,8 @@ Running `heroku create` will generate the name and the URL from which it can be 
    The command should output the number tables (1) and the number of rows (4).
 
 1. Use `pgsql` to connect to the database and query the tables:
-   ```shell
+
+```
    $ heroku pg:psql
 
    ::DATABASE=> \dt
@@ -78,6 +79,6 @@ Running `heroku create` will generate the name and the URL from which it can be 
   3 | Laa-Laa     | Yellow
   4 | Po          | Red
 (4 rows)
-   ```
+```
 
 Connecting to the app through the URL (which was generated when `heroku create` was run) will retrieve entries from the database and display them in the browser.
