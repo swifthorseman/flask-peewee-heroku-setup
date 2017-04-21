@@ -60,7 +60,7 @@ Running `heroku create` will generate the name and the URL from which it can be 
    ```
    The command should output the number tables (1) and the number of rows (4).
 
-1. Use `pgsql` to connect to the database and query the tables:
+1. Use `psql` to connect to the database and query the tables:
 
    ```
    $ heroku pg:psql
