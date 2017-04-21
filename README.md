@@ -62,23 +62,23 @@ Running `heroku create` will generate the name and the URL from which it can be 
 
 1. Use `pgsql` to connect to the database and query the tables:
 
-```
+   ```
    $ heroku pg:psql
 
    ::DATABASE=> \dt
              List of relations
- Schema |    Name    | Type  |     Owner
---------+------------+-------+----------------
- public | tellytubby | table | sgaluyzmzkklpj
-(1 row)
-::DATABASE=> select * from tellytubby;
- id |    name     | colour
-----+-------------+--------
-  1 | Tinky Winky | Purple
-  2 | Dipsy       | Green
-  3 | Laa-Laa     | Yellow
-  4 | Po          | Red
-(4 rows)
-```
+    Schema |    Name    | Type  |     Owner
+   --------+------------+-------+----------------
+    public | tellytubby | table | sgaluyzmzkklpj
+   (1 row)
+   ::DATABASE=> select * from tellytubby;
+        id |    name     | colour
+       ----+-------------+--------
+         1 | Tinky Winky | Purple
+         2 | Dipsy       | Green
+         3 | Laa-Laa     | Yellow
+         4 | Po          | Red
+   (4 rows)
+   ```
 
 Connecting to the app through the URL (which was generated when `heroku create` was run) will retrieve entries from the database and display them in the browser.
